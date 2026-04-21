@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form </title>
+    <style>
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        .login-form-contianer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            height: 90vh;
+            border: 2px solid red;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            border: 2px solid black;
+            width: 50%;
+        }
+
+        .login-form input {
+            margin: 10px;
+            padding: 10px;
+
+        }
+    </style>
 </head>
+
 <body>
     <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Profile</a>
-        <a href="contact.html">Login</a>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+
+        </div>
+
+        <a href="login.html">Login</a>
     </nav>
-    
+    <div class="login-form-contianer">
+        <form class="login-form">
+            <h1>Login Form</h1>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <!-- <button>Login</button> -->
+        </form>
+    </div>
+
+
 </body>
+
 </html>
