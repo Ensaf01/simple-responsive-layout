@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <style>
+        body{
+            border: 2px solid skyblue;
+
+        }
+        .image-container{
+            display: flex;
+            /* gap: 20px;
+            padding: 16px;
+            border: 2px solid rgb(191, 51, 51); */
+        }
+        .image-container div{
+            width: 50%;
+            /* border: 2px solid rgb(51, 51, 191); */
+        }
+        
+        .image-container img{
+            width: 100%;
+        }
+        .im-2,.im-1{
+            /* border: 2px solid rgb(13, 41, 179); */
+        }
+        @media screen and (max-width:576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+            width: 100%;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive website</h1>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS relative Unit</li>
+            <li>body max width and horizontal center align</li>
+            <li>image fluid</li>
+            <li>two column flex and use medida query with flex direction</li>
+            <li>multi column: grid layout</li>
+            <li>menu Responsive with java script</li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-container">
+            <div>
+                <img class="im-1" src="images/food.webp" alt="">
+    
+            </div>
+            <div>
+                <img class="im-2" src="images/goat.avif" alt="">
+            </div>
+        </div>
+
+    </main>
+    
+
+
+    
+</body>
+</html>
